@@ -1,4 +1,4 @@
-package RefactoringRename;
+package Refactoring_Rename;
 public class Calculator {
    public static final char ADDITION = '+';
    public static final char SUBTRACTION = '-';

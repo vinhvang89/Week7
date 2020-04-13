@@ -1,4 +1,4 @@
-package Refactoring;
+package Refactoring_TennisGame;
 
 public class TennisGameTest {
     public static void main(String[] args) {

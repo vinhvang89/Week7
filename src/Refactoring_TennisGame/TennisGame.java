@@ -1,4 +1,4 @@
-package Refactoring;
+package Refactoring_TennisGame;
 
 public class TennisGame {
     private final static String POINT0 ="Love";

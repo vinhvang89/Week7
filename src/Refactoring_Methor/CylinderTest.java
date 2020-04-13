@@ -1,4 +1,4 @@
-package RefactoringMethor;
+package Refactoring_Methor;
 
 public class CylinderTest {
     public static void main(String[] args) {

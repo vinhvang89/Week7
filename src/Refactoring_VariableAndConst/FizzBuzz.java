@@ -1,4 +1,4 @@
-package RefactoringInstance;
+package Refactoring_VariableAndConst;
 
 public class FizzBuzz {
 
