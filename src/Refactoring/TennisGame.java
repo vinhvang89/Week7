@@ -15,7 +15,7 @@ public class TennisGame {
         else
             return score + (getPlayerScore(m_score1) + " - " + getPlayerScore(m_score2));
     }
-    public static String getPlayerScore(int m_score) {
+    private static String getPlayerScore(int m_score) {
         switch (m_score) {
             case 0:
                 return POINT0;
@@ -29,7 +29,7 @@ public class TennisGame {
                 return DEUCE;
         }
     }
-    public static String compareScoresOver4(String player1,String player2,int m_score1,int m_score2){
+    private static String compareScoresOver4(String player1,String player2,int m_score1,int m_score2){
         int minus_result = m_score1 - m_score2;
         switch (minus_result){
             case 0:
