@@ -2,12 +2,12 @@ package Queue_Palindrome;
 
 import java.util.Arrays;
 
-public class Palindrome {
+public class Words {
     private int head = 0;
     private int tail = -1;
     private char[] array;
     private int capacity;
-    public Palindrome(int capacity ){
+    public Words(int capacity ){
         this.capacity = capacity;
         array = new char[this.capacity];
     }
