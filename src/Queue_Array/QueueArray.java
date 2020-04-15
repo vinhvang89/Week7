@@ -41,19 +41,15 @@ public class QueueArray {
         if (isQueueEmpty())
             throw new ArrayIndexOutOfBoundsException("This Array is empty");
         else {
-            head++;
-            if (head == capacity - 1)
-                head = capacity -1;
-            a = Array[head - 1];
+            a = Array[head];
             for (int i = 0; i < Array.length; i++) {
-                if (i != head - 1) {
+                if (i != head) {
                     temp[j] = Array[i];
                     j++;
                 }
             }
             Array = temp;
             currentSize--;
-            head --;
             return a;
         }
 
