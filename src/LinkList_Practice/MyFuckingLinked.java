@@ -72,20 +72,23 @@ public class MyFuckingLinked {
         }
         return false;
     }
-//    public void remove(Object what){
-//        Skull hat = head;
-//        Object bucket;
-//        for (int i = 0; i <= numberEyes ; i++) {
-//              if( hat.bone != what){
-//                  bucket = hat.next.bone;
-//                  hat.next.bone = hat.next.next.bone;
-//                  hat.bone = bucket;
-//              } else {
-//                  hat.bone = hat.next.bone;
-//              }
-//
-//        }
-//    }
+    public void remove(Object what){
+        Skull hat = head;
+        Object bucket;
+        int count=0;
+        for (int i = 0 ; i <= numberEyes ; i++) {
+                count++;
+            if( hat.next.bone == what ) {
+                break;
+            }
+            hat = hat.next;
+        }
+        hat.next = hat.next.next;
+        for (int j = count; j <= numberEyes ; j++) {
+            hat = hat.next;
+        }
+
+    }
     public void print(){
         Skull hat = head;
         while (hat!=null){
