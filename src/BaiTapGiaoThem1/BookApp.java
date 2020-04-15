@@ -18,10 +18,10 @@ public class BookApp {
         Book[] books = {book1, book2, book3, book4, book5, book6, book7, book8, book9, book10};
         ProgrammingBook[] book1s = {book1, book2, book3, book4, book5};
         FictionBook[] book2s = {book6, book7, book8, book9, book10};
-        System.out.println("Enter a category of book :");
+        System.out.println("Enter a Name of book :");
         String word = scan.nextLine();
-        for (FictionBook book : book2s) {
-            if (book.getCategory().contains(word)) {
+        for (Book book : books) {
+            if (book.getName().contains(word)) {
                 System.out.println(book.toString());
             }
         }
