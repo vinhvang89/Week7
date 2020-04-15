@@ -35,22 +35,22 @@ public class QueueArray {
     }
 
     public int dequeue() {
-        int[] temp = new int[capacity];
-        int a;
+        int[] temps = new int[capacity];
+        int temp;
         int j = 0;
         if (isQueueEmpty())
             throw new ArrayIndexOutOfBoundsException("This Array is empty");
         else {
-            a = Array[head];
+            temp = Array[head];
             for (int i = 0; i < Array.length; i++) {
                 if (i != head) {
-                    temp[j] = Array[i];
+                    temps[j] = Array[i];
                     j++;
                 }
             }
-            Array = temp;
+            Array = temps;
             currentSize--;
-            return a;
+            return temp;
         }
 
     }

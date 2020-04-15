@@ -1,4 +1,4 @@
-package Stack_DecimalToBinary;
+package Stack_ConvertFromDecimal;
 
 import java.util.Arrays;
 
