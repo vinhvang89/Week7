@@ -1,4 +1,4 @@
-package LinkedList_Queue;
+package LinkedList_QueueCircular;
 
 public class QueueLinked {
     Node front;

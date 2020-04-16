@@ -2,14 +2,17 @@ package LinkedList_QueueSimple;
 
 public class QueueTest {
     public static void main(String[] args) {
-        QueueList queue = new QueueList();
-        queue.enqueue(14);
-        queue.enqueue(22);
-        queue.dequeue();
-        queue.dequeue();
-        queue.enqueue(12);
-        queue.enqueue(14);
-        queue.dequeue();
-        System.out.println("Dequeue item is :" +queue.dequeue().key);
+        QueueList strings = new QueueList();
+        strings.enqueue("We");
+        strings.enqueue("are");
+        strings.enqueue("the");
+        strings.enqueue("self-appointment");
+        strings.enqueue("Champion");
+        strings.dequeue();
+        strings.dequeue();
+        strings.enqueue("Whom");
+        strings.enqueue("is");
+        strings.enqueue("he ?");
+        strings.display();
     }
 }

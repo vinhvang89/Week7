@@ -1,37 +1,51 @@
 package LinkedList_QueueSimple;
-class Node{
-    public int key;
-    public Node next;
-    public Node(int key){
-        this.key = key;
-        this.next = null;
-    }
-
-}
-
 public class QueueList {
-    private Node head;
-    private Node tail;
-    public QueueList(){
+    Node head;
+    Node tail;
+
+    public QueueList() {
         this.head = null;
         this.tail = null;
     }
-    public void enqueue(int key){
-        Node temp = new Node(key);
-        if(this.tail == null){
-            this.head = this.tail = temp;
-            return;
+
+    private class Node {
+        Node next;
+        String type;
+        public Node(String type){
+            this.next = null;
+            this.type = type;
         }
-        this.tail.next =temp;
-        this.tail = temp;
+        public String getType(){
+            return this.type;
+        }
     }
-    public Node dequeue() {
-        if (this.head == null)
-        return null;
+    public void enqueue(String type){
+        Node temp = new Node(type);
+        if(this.tail == null)
+            this.head = this.tail = temp;
+        else
+            this.tail.next = temp;
+        this.tail = temp;
+        this.tail.next = null;
+    }
+    public String dequeue(){
+        if(this.head == null)
+            return "This is empty queue ";
+        else {
+            String data;
+            Node temp = this.head;
+            data = temp.type;
+            this.head = this.head.next;
+            System.out.println("Dequeue : " + data);
+            return data;
+        }
+    }
+    public void display(){
         Node temp = this.head;
-        this.head = this.head.next;
-        if(this.head == null )
-            this.tail = null;
-        return temp;
+        while (temp.next != null){
+            System.out.println(temp.type);
+            temp = temp.next;
+        }
+        System.out.println(temp.type);
     }
 }
