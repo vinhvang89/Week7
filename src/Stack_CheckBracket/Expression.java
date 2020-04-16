@@ -1,4 +1,4 @@
-package Stack_ChechBracket;
+package Stack_CheckBracket;
 
 import java.util.Arrays;
 

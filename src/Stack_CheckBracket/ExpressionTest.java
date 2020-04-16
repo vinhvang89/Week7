@@ -1,4 +1,4 @@
-package Stack_ChechBracket;
+package Stack_CheckBracket;
 
 public class ExpressionTest {
     public static void main(String[] args) {
