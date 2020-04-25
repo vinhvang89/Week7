@@ -8,15 +8,12 @@ public class QueueList {
         this.tail = null;
     }
 
-    private class Node {
+    private static class Node {
         Node next;
         String type;
         public Node(String type){
             this.next = null;
             this.type = type;
-        }
-        public String getType(){
-            return this.type;
         }
     }
     public void enqueue(String type){
